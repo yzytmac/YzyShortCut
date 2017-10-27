@@ -1,9 +1,24 @@
-# ShortCutDemo
-Android创建桌面快捷图标  
+package com.example.yzy.shutcutdemo;
 
-```
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
 
-//点击快捷方式的意图
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void onClick(View pView) {
+        addShorttCut();
+    }
+
+    public void addShorttCut() {
+        //点击快捷方式的意图
         Intent clickIntent = new Intent();
         clickIntent.setClass(getApplicationContext(), MainActivity.class);
         clickIntent.setAction("android.intent.action.MAIN");
@@ -27,10 +42,5 @@ Android创建桌面快捷图标
         shortCutIntent.putExtra("duplicate", false);
         //发送广播进行创建
         sendBroadcast(shortCutIntent);
-
-
-```  
-需要在清单文件中添加权限  
-```
-<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
-```
+    }
+}
