@@ -1,4 +1,4 @@
-# ShortCutDemo
+# YzyShortCut
 Android创建桌面快捷图标  
 完美实现360手机助手桌面意见加速图标旋转动画  
 ![](https://github.com/yzytmac/ShortCutDemo/blob/master/device-2017-12-20-212637.gif "我的图片")
