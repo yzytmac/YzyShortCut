@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         //快捷方式的名称
         shortCutIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "垃圾清理");
         //快捷图标
-        shortCutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.mipmap.ic_launcher_round));
+        shortCutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.mipmap.clean_icon));
         // 是否允许重建，这个true和false好像没什么区别
         shortCutIntent.putExtra("duplicate", false);
         //发送广播进行创建
