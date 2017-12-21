@@ -36,5 +36,4 @@ Android创建桌面快捷图标
 ```
 <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
 ```
-个人感觉360和腾讯手机助手实现方式是点击图标后打开一个透明的activity来实现的，所以就采用了这种方式琢磨出来的。如果有更好的实现方式欢迎联系。  
-邮箱： yzytmac@163.com  
+个人感觉360和腾讯手机助手实现方式是点击图标后打开一个透明的activity来实现的，所以就采用了这种方式琢磨出来的。如果有更好的实现方式欢迎联系或提交代码。我的邮箱： yzytmac@163.com  
